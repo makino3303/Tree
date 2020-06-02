@@ -1,0 +1,41 @@
+.new{
+  background-color: #eeeeee;
+  height: 100vh;
+  width: 100vw;
+}
+
+.new-header, .new-content{
+  height: 100px;
+  width: calc(100vw - 200px);
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.new-header-title{
+  padding: 0 10px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 100px;
+  color: black;
+}
+
+.new-content{
+  height: 600px;
+}
+
+.new-content-block{
+  padding: 10px;
+}
+
+.new-content-block-submit{
+  margin-left: 10px;
+  width: 190px;
+  background-color: #dddddd;
+  cursor: pointer;
+}
+
+#host_time{
+  height: 24px;
+  width: 180px;
+}
