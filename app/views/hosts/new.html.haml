@@ -1,0 +1,24 @@
+.new
+  .new-header
+    .new-header-title 献立の追加
+  = form_for @hosts, url: hosts_path, method: :host, html: {class: 'new-content'} do |f|
+    .new-content-block
+      = f.label :title, 'レシピの名前', class:'new-content-block-title'
+      .new-content-block-title-border
+        = f.text_field :title, class: "new-content-block-title-border1"
+    .new-content-block
+      = f.label :food1, 'メイン食材1', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :food1, class:"new-content-block-food1"
+      = f.label :food2, 'メイン食材2', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :food2, class:"new-content-block-food2"
+      = f.label :food3, 'メイン食材3', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :food3, class:"new-content-block-food3"
+    .new-content-block
+      = f.label :time, '調理時間', class: "new-content-block-title"
+      .new-content-block
+        = f.select :time, [["5分以内", "5分以内"], ["10分", "10分"], ["20分", "20分"], ["30分", "30分"], ["1時間", "1時間"], ["1時間以上", "1時間以上"]], include_blank: "選択して下さい" 
+    .new-content-block-submit
+      = f.submit '登録する', class:"new-content-block-submit"
