@@ -5,6 +5,7 @@ class CreateHosts < ActiveRecord::Migration[5.2]
       t.string :food1
       t.string :food2
       t.string :food3
+      t.string :image
       t.string :time
       t.timestamps
     end

@@ -20,5 +20,7 @@
       = f.label :time, '調理時間', class: "new-content-block-title"
       .new-content-block
         = f.select :time, [["5分以内", "5分以内"], ["10分", "10分"], ["20分", "20分"], ["30分", "30分"], ["1時間", "1時間"], ["1時間以上", "1時間以上"]], include_blank: "選択して下さい" 
+      .new-content-block
+        = f.file_field :image
     .new-content-block-submit
       = f.submit '登録する', class:"new-content-block-submit"
