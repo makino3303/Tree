@@ -37,7 +37,7 @@
   width: calc(100vw - 200px);
   padding: 50px 0;
   margin: 0 auto;
-  background-color: blue;
+  background-color: black;
   z-index: -9999;
 }
 
@@ -46,11 +46,90 @@
   width: calc(100vw - 300px);
   margin: auto;
   background-color: pink;
+  display: flex;
+}
+
+.content-main-left{
+  width: 50%;
+  height: 100%;
+  // background-color: black;
+}
+
+.content-main-left-box{
+  padding-top: 20%;
+}
+
+.content-main-right{
+  width: 50%;
+  height: 100%;
+  background-color: white;
+}
+.content-main-right-main{
+  height: calc(100% - 20px);;
+  width: calc(100% - 40px);
+  padding: 10px 20px;
+}
+
+.content-main-right-title{
+  padding-top: 40px;
+  font-size: 48px;
+  text-align: center;
+}
+
+.content-main-right-food{
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.content-main-right-foodbox{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.content-main-right-foodbox1,
+.content-main-right-foodbox2,
+.content-main-right-foodbox3{
+  padding-top: 10px;
+  width: 33%;
+  text-align: center;
+}
+
+.content-main-right-foodbox1{
+  background: linear-gradient(yellow, red);
+}
+
+.content-main-right-foodbox2{
+  background: linear-gradient(yellow, rgb(99, 203, 245));
+}
+
+.content-main-right-foodbox3{
+  background: linear-gradient(yellow, rgb(72, 202, 72));
+}
+
+
+.content-main-right-time{
+  display: flex;
+  padding-top: 40px;
+}
+
+.content-main-right-timetitle{
+  font-weight: bold;
+  width: 50%;
+}
+.content-main-right-timebox{
+  width: 50%;
+  border-bottom: 1px gray solid;
+}
+
+.content-main-right-link{
+  text-align: right;
+  padding-top: 40px;
 }
 
 .footer{
   height: 100px;
   width: calc(100vw - 200px);
   margin: 0 auto;
-  background-color: red;
+  background-color: yellow;
 }

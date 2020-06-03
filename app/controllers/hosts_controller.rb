@@ -2,7 +2,7 @@ class HostsController < ApplicationController
   protect_from_forgery except: :create
 
   def index
-
+    @random = Host.order("RAND()").limit(1)
   end
 
   def new
