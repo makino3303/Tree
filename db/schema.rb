@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2020_05_25_053734) do
     t.string "food1"
     t.string "food2"
     t.string "food3"
+    t.string "image"
     t.string "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

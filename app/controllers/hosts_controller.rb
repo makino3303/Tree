@@ -2,7 +2,7 @@ class HostsController < ApplicationController
   protect_from_forgery except: :create
 
   def index
-    @hosts = Host.all
+
   end
 
   def new
@@ -10,8 +10,8 @@ class HostsController < ApplicationController
   end
 
   def create
-    @host = Host.new(host_params)
-    if @host.save
+    @hosts = Host.new(host_params)
+    if @hosts.save
       redirect_to root_path
     else
       render new_host_path
@@ -26,6 +26,7 @@ class HostsController < ApplicationController
       :food1,
       :food2,
       :food3,
+      :image,
       :time
     )
   end
