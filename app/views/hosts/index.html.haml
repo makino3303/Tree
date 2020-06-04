@@ -5,8 +5,32 @@
     .top-header-right
       ランダムで表示
 .content
-  .content-main
-    ランダムで表示を押した時に出る画像とタイトル
+  = @random.each do |host|
+    .content-main
+      .content-main-left
+        .content-main-left-box
+          = image_tag host.image.to_s, class:".content-main-left-box-", size:"575x300"
+      .content-main-right
+        .content-main-right-main
+          .content-main-right-title
+            = host.title
+          .content-main-right-food
+            メイン食材
+          .content-main-right-foodbox
+            .content-main-right-foodbox1
+              = host.food1
+            .content-main-right-foodbox2
+              = host.food2
+            .content-main-right-foodbox3
+              = host.food3
+          .content-main-right-time
+            .content-main-right-timetitle
+              調理時間目安
+            .content-main-right-timebox
+              = host.time
+          .content-main-right-link
+            = link_to host_path(host.id) do
+              詳細ページへ
 .footer
   .footer-main
     .footer-main-kensaku 検索したい材料もしくはレシピ名を入力し検索する機能
