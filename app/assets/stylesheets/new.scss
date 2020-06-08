@@ -1,6 +1,6 @@
 .new{
   background-color: #eeeeee;
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .new-content{
-  height: 600px;
+  height: calc(150vh - 200px);
 }
 
 .new-content-block{

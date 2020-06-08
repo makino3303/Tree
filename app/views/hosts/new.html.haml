@@ -17,6 +17,36 @@
       .new-content-block-food
         = f.text_field :food3, class:"new-content-block-food3"
     .new-content-block
+      = f.label :subfood1, 'サブ食材1', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :subfood1, class:"new-content-block-food1"
+      = f.label :subfood2, 'サブ食材2', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :subfood2, class:"new-content-block-food2"
+      = f.label :subfood3, 'サブ食材3', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :subfood3, class:"new-content-block-food3"
+    .new-content-block
+      = f.label :seasoning1, '調味料1', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :seasoning1, class:"new-content-block-food1"
+      = f.label :seasoning2, '調味料2', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :seasoning2, class:"new-content-block-food2"
+      = f.label :seasoning3, '調味料3', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :seasoning3, class:"new-content-block-food3"
+    .new-content-block
+      = f.label :seasoning4, '調味料4', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :seasoning4, class:"new-content-block-food1"
+      = f.label :seasoning5, '調味料5', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :seasoning5, class:"new-content-block-food2"
+      = f.label :seasoning6, '調味料6', class:'new-content-block-food'
+      .new-content-block-food
+        = f.text_field :seasoning6, class:"new-content-block-food3"
+    .new-content-block
       = f.label :time, '調理時間', class: "new-content-block-title"
       .new-content-block
         = f.select :time, [["5分以内", "5分以内"], ["10分", "10分"], ["20分", "20分"], ["30分", "30分"], ["1時間", "1時間"], ["1時間以上", "1時間以上"]], include_blank: "選択して下さい" 

@@ -1,1 +1,74 @@
-aaaa
+.show
+  .show-top
+  .show-main
+    .show-main-title
+      = @host.title
+    .show-main-content
+      .show-main-content-left
+        = image_tag @host.image.to_s, class:"show-main-content-left-image", size:"450x250"
+      .show-main-content-right
+        .show-main-content-right-foodmain
+          .show-main-content-right-foodmain-title
+            主な食材
+          .show-main-content-right-foodmain-food
+            .show-main-content-right-foodmain-food1
+              = @host.food1
+            .show-main-content-right-foodmain-food2
+              = @host.food2
+            .show-main-content-right-foodmain-food3
+              = @host.food3
+        .show-main-content-right-foodsub
+          .show-main-content-right-foodsub-title
+            あるともっと美味しくなる食材
+          - if @host.subfood1.blank?
+            登録なし
+          - else
+            .show-main-content-right-foodmain-food
+              .show-main-content-right-foodmain-food1
+                = @host.subfood1
+              - if @host.subfood2.blank?
+                .show-main-null
+              - else
+                .show-main-content-right-foodmain-food2
+                  = @host.subfood2
+              - if @host.subfood3.blank?
+                .show-main-null
+              - else
+                .show-main-content-right-foodmain-food3
+                  = @host.subfood3
+        .show-main-content-right-foodsub
+          .show-main-content-right-foodsub-title
+            必要な調味料
+          - if @host.seasoning1.blank?
+            登録なし
+          - else
+            .show-main-content-right-foodmain-food
+              .show-main-content-right-foodmain-food1
+                = @host.seasoning1
+              - if @host.seasoning2.blank?
+                .show-main-null
+              - else
+                .show-main-content-right-foodmain-food2
+                  = @host.seasoning2
+              - if @host.seasoning3.blank?
+                .show-main-null
+              - else
+                .show-main-content-right-foodmain-food3
+                  = @host.seasoning3
+          - if @host.seasoning4.blank?
+            登録なし
+          - else
+            .show-main-content-right-foodmain-food
+              .show-main-content-right-foodmain-food1
+                = @host.seasoning4
+              - if @host.seasoning5.blank?
+                .show-main-null
+              - else
+                .show-main-content-right-foodmain-food2
+                  = @host.seasoning5
+              - if @host.seasoning6.blank?
+                .show-main-null
+              - else
+                .show-main-content-right-foodmain-food3
+                  = @host.seasoning6
+      .

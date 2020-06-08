@@ -18,6 +18,9 @@ class HostsController < ApplicationController
     end
   end
 
+  def show
+    @host = Host.find(params[:id])
+  end
 
   private
   def host_params
@@ -26,6 +29,15 @@ class HostsController < ApplicationController
       :food1,
       :food2,
       :food3,
+      :subfood1, 
+      :subfood2, 
+      :subfood3, 
+      :seasoning1, 
+      :seasoning2, 
+      :seasoning3, 
+      :seasoning4, 
+      :seasoning5, 
+      :seasoning6, 
       :image,
       :time
     )

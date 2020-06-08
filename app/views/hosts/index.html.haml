@@ -23,6 +23,26 @@
               = host.food2
             .content-main-right-foodbox3
               = host.food3
+          .content-main-right-food
+            サブ食材
+          - if host.subfood1.blank?
+            登録なし
+          - else
+            .content-main-right-foodbox
+              .content-main-right-foodbox1
+                = host.subfood1
+              - if host.subfood2.blank?
+                .content-main-right-null
+                  登録なし
+              - else
+                .content-main-right-foodbox2
+                  = host.subfood2
+              - if host.subfood3.blank?
+                .content-main-right-null
+                  登録なし
+              - else
+                .content-main-right-foodbox3
+                  = host.subfood3
           .content-main-right-time
             .content-main-right-timetitle
               調理時間目安
