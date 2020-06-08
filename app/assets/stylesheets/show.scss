@@ -1,0 +1,85 @@
+.show{
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient( #cccccc, #eeeeee);
+}
+
+.show-top{
+  height: 50px;
+}
+
+.show-main{
+  width: 900px;
+  height: calc(100vh - 200px);
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.show-main-title{
+  height: 100px;
+  padding: 0 10px;
+  font-size: 36px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.show-main-content{
+  height: 500px;
+  display: flex;
+}
+
+.show-main-null{
+  width: 30%;
+  text-align: center;
+}
+
+.show-main-content-left{
+  width: 50%;
+  background-color: red;
+  padding-top: 125px;
+}
+
+.show-main-content-right{
+  width: 50%;
+  background-color: blue;
+}
+
+.show-main-content-right-foodmain{
+  padding: 50px 20px 0;
+  height: 100px;
+  background-color: purple;
+}
+
+.show-main-content-right-foodsub{
+  padding: 0 20px;
+}
+
+.show-main-content-right-foodmain-title, 
+.show-main-content-right-foodsub-title{
+  color: #cccccc;
+  font-size: 24px;
+}
+
+.show-main-content-right-foodmain-food{
+  padding-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.show-main-content-right-foodmain-food1, 
+.show-main-content-right-foodmain-food2, 
+.show-main-content-right-foodmain-food3{
+  width: 33%;
+  text-align: center;
+}
+
+.show-main-content-right-foodsub{
+  height: 100px;
+  background-color: orange;
+}
+
+.show-main-content-right-seasoning{
+  height: 100px;
+  background-color: pink;
+}
