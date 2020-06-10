@@ -40,7 +40,9 @@
           .show-main-content-right-foodsub-title
             必要な調味料
           - if @host.seasoning1.blank?
-            登録なし
+            .show-main-content-right-foodmain-food
+              .show-main-content-right-foodmain-food1
+                登録なし
           - else
             .show-main-content-right-foodmain-food
               .show-main-content-right-foodmain-food1
@@ -56,7 +58,6 @@
                 .show-main-content-right-foodmain-food3
                   = @host.seasoning3
           - if @host.seasoning4.blank?
-            登録なし
           - else
             .show-main-content-right-foodmain-food
               .show-main-content-right-foodmain-food1
