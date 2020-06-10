@@ -2,11 +2,11 @@
   .top-header
     = link_to new_host_path(), class:"top-header-left" do
       レシピの登録
-    .top-header-right
+    %button.top-header-right#button
       ランダムで表示
 .content
-  = @random.each do |host|
-    .content-main
+  - @random.each do |host|
+    .content-main#contents
       .content-main-left
         .content-main-left-box
           = image_tag host.image.to_s, class:".content-main-left-box-", size:"575x300"
