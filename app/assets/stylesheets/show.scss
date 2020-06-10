@@ -10,10 +10,9 @@
 
 .show-main{
   width: 900px;
-  height: calc(100vh - 200px);
   background-color: #ffffff;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 50px 0 0;
 }
 
 .show-main-title{
@@ -41,17 +40,17 @@
 
 .show-main-content-right{
   width: 50%;
-  background-color: blue;
 }
 
 .show-main-content-right-foodmain{
   padding: 50px 20px 0;
   height: 100px;
-  background-color: purple;
+  border-bottom: 1px dashed #cccccc;
 }
 
 .show-main-content-right-foodsub{
   padding: 0 20px;
+  border-bottom: 1px dashed #cccccc;
 }
 
 .show-main-content-right-foodmain-title, 
@@ -65,6 +64,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  height: 50px;
 }
 
 .show-main-content-right-foodmain-food1, 
@@ -75,11 +75,9 @@
 }
 
 .show-main-content-right-foodsub{
-  height: 100px;
-  background-color: orange;
+  padding-top: 20px;
 }
 
 .show-main-content-right-seasoning{
   height: 100px;
-  background-color: pink;
 }
