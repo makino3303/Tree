@@ -139,3 +139,22 @@
   margin: 0 auto;
   background-color: yellow;
 }
+
+#search{
+  height: 98px;
+  width: 80%;
+  font-size: 36px;
+  border: 1px solid #cccccc;
+  padding: 0 10px;
+}
+
+#submit{
+  height: 100px;
+  width: 20%;
+  border: 1px solid;
+  font-size: 36px;
+}
+
+.search{
+  display: flex;
+}
