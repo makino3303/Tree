@@ -53,4 +53,8 @@
               詳細ページへ
 .footer
   .footer-main
-    .footer-main-kensaku 検索したい材料もしくはレシピ名を入力し検索する機能
+    .footer-main-kensaku 
+      = form_tag root_path,:method => 'get' do
+        .search
+          = text_field_tag :search
+          = submit_tag 'Search', name: nil, id:"submit"
